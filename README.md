@@ -2,7 +2,7 @@
 
 This guide documents the Gentoo installation process for the Raspberry Pi 5 (8GB) using a **chroot** environment. Below is the screenshot of the final Gentoo Installation on raspberry-pi-5 being sshed into from my Ubuntu host machine.
 
-[Raspberry Pi 5 Gentoo ARM64](./screenshots/rpi5-server-gentoo.png "Raspberry Pi 5 fastfetch on Gentoo")
+![Raspberry Pi 5 Gentoo ARM64](./screenshots/rpi5-server-gentoo.png "Raspberry Pi 5 fastfetch on Gentoo")
 
 ## 1. Disk Preparation (On Ubuntu Host)
 
