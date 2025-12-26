@@ -1,0 +1,13 @@
+#!/bin/bash
+BLUE='\033[1;34m'
+NC='\033[0m'
+
+fastfetch
+echo -e "${BLUE}--- Pi 5 Performance ---${NC}"
+# Pulls the 6-second boot data from systemd
+BOOT=$(systemd-analyze | awk '/Startup finished/ {print $4 " (kernel) + " $7 " (userspace) = " $10}')
+TEMP=$(echo "scale=1; $(cat /sys/class/thermal/thermal_zone0/temp)/1000" | bc)
+
+echo -e "🚀 Boot: $BOOT"
+echo -e "🌡️  Temp: ${TEMP}°C"
+echo -e "${BLUE}------------------------${NC}"
